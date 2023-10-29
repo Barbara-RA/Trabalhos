@@ -41,7 +41,8 @@ form label {
 }
 
 form input[type="text"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="tel"] {
     background-color: rgb(44, 43, 43);
     color: white;
     border: none;
@@ -50,7 +51,8 @@ form input[type="email"] {
 }
 
 form input[type="text"]::placeholder,
-form input[type="email"]::placeholder {
+form input[type="email"]::placeholder,
+form input[type="tel"]::placeholder {
     color: white;
 }
 

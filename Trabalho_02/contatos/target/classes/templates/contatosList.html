@@ -44,21 +44,21 @@
     <hr>
     <form method="POST" action="contatos" th:object="${contato}">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
+        <label for="exampleInputEmail1" class="form-label">Endereço de Email: </label>
         <input type="email" th:field="*{email}" class="form-control" th:disabled="${edit == true}" name="email" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">Não compartilhamos seu email com ninguém.</div>
+        <div id="emailHelp" class="form-text">* Não compartilhamos seu email.</div>
       </div>
       <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Nome</label>
+        <label for="formGroupExampleInput" class="form-label">Nome: </label>
         <input type="text" class="form-control" th:field="*{nome}" name="nome" placeholder="Insira o Nome">
       </div>
       <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Telefone</label>
+        <label for="formGroupExampleInput" class="form-label">Telefone: </label>
         <input type="tel" class="form-control" th:field="*{telefone}" name="telefone" placeholder="Insira o telefone">
       </div>
 
       <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Endereço</label>
+        <label for="formGroupExampleInput" class="form-label">Endereço: </label>
         <input type="text" class="form-control" th:field="*{endereco}" name="endereco" placeholder="Insira o Endereço">
       </div>
 
