@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keyword" content="jogo, apex legends, modos de jogo,Battle Royale, habilidades, suprimentos ">
+    <meta name="decripition" content="Conheça o game Apex Legends e fique sempre atualizado">
+    <meta name="author" content="Barbara Ramos Alves">
+    <link rel="stylesheet" href="css/styleProjeto.css">
+    <link rel="icon" href="Img/icone.png">
+    <title>Modos-Apex Legends</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="Img/logo branca.png" alt="">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="modos.html">MODOS</a></li>
+                <li><a href="lendas.html">LENDAS</a></li>
+                <li><a href="mapas.html">MAPAS</a></li>
+                <li><a href="seuJogo.html">SEU GAME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-transform: uppercase;">Seu Game</h1>
+    
+        <!-- Formulário 1 com o ID "formulario1" -->
+        <form id="formulario1" method="post" action="cadastroPost" th:object="${cadastro}">
+            <label for="nickName">Nick Name:</label>
+            <input type="text" id="nickName" name="nickName" th:field="*{nickName}"><br><br>
+            
+            <label for="lendaFavorita">Lenda favorita:</label>
+            <select id="lendaFavorita" name="lendaFavorita" th:field="*{lendaFavorita}">
+                <option value="Ash">Ash</option>
+                <option value="Ballistic">Ballistic</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Bloodhound">Bloodhound</option>
+                <option value="Catalyst">Catalyst</option>
+                <option value="Caustic">Caustic</option>
+                <option value="Crypto">Crypto</option>
+                <option value="Fuse">Fuse</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Horizon">Horizon</option>
+                <option value="Lifeline">Lifeline</option>
+                <option value="Loba">Loba</option>
+                <option value="Mad Maggie">Mad Maggie</option>
+                <option value="Mirage">Mirage</option>
+                <option value="Newcastle">Newcastle</option>
+                <option value="Octane">Octane</option>
+                <option value="Pathfinder">Pathfinder</option>
+                <option value="Rampart">Rampart</option>
+                <option value="Revenant">Revenant</option>
+                <option value="Seer">Seer</option>
+                <option value="Valkyrie">Valkyrie</option>
+                <option value="Vantage">Vantage</option>
+                <option value="Wattson">Wattson</option>
+                <option value="Wraith">Wraith</option>
+            </select><br><br>
+            
+            <label for="partidasJogadas">Partidas Jogadas:</label>
+            <input type="number" id="partidasJogadas" name="partidasJogadas" th:field="*{partidasJogadas}"><br><br>
+            
+            <label for="partidasGanhas">Partidas Ganhas:</label>
+            <input type="number" id="partidasGanhas" name="partidasGanhas" th:field="*{partidasGanhas}"><br><br>
+            
+            <label for="maximoDano">Máximo de dano causado em uma partida:</label>
+            <input type="number" id="maximoDano" name="maximoDano" th:field="*{maximoDano}"><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+        
+        
+
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img src="Img/footer02.png" alt="">
+            <div class="cadastro">
+
+                <h2>Newsletter</h2>
+
+                <form class="formulario">
+                    <label for="txtNome"><b>Nome:</b></label><input type="text" id="txtNome" maxlength="30"
+                        placeholder="Nome completo" required>
+                    <br>
+
+                    <label for="email"><b>E-mail:</b></label><input type="email" id="email" required
+                        placeholder="e-mail válido">
+
+                    <input id="botaocadastro" type="button" value="Cadastrar">
+
+                </form>
+
+            </div>
+
+
+            <div>
+                <img src="Img/instaBlack.png" alt="">
+                <img src="Img/youtubeBlack.png" alt="">
+                <img src="Img/twitterBlack.png" alt="">
+            </div>
+        </div>
+        <p>Nenhum direito reservado</p>
+    </footer>
+</body>
+
+</html>

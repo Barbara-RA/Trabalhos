@@ -1,0 +1,78 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatos - Barbs</title>
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+  <header>
+    <h1>Contatos de Clientes</h1>
+    <img src="Img/b2.png" alt="" width="140">
+  </header>
+
+  <main>
+    <div class="mb-3">
+      <form th:action="@{/contatosParametro}">
+        <label class="form-label">Nome</label>
+        <input type="text" class="form-control" th:name="nome" placeholder="Insira o Nome">
+        <button type="submit" class="btn btn-primary">Pesquisar</button>
+      </form>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="contato : ${contatos}">
+          <td th:text="${contato.nome}"></td>
+          <td th:text="${contato.email}"></td>
+          <td th:text="${contato.telefone}"></td>
+          <td th:text="${contato.endereco}"></td>
+          <td><a th:href="@{'/editarContato?email=' + ${contato.email}}">Editar</a></td>
+          <td><a th:href="@{'/excluirContato?email=' + ${contato.email}}">Excluir</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+    <form method="POST" action="contatos" th:object="${contato}">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
+        <input type="email" th:field="*{email}" class="form-control" th:disabled="${edit == true}" name="email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Não compartilhamos seu email com ninguém.</div>
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nome</label>
+        <input type="text" class="form-control" th:field="*{nome}" name="nome" placeholder="Insira o Nome">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" th:field="*{telefone}" name="telefone" placeholder="Insira o telefone">
+      </div>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Endereço</label>
+        <input type="text" class="form-control" th:field="*{endereco}" name="endereco" placeholder="Insira o Endereço">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </main>
+
+  <footer>
+    <img src="Img/b3.png" alt="">
+    <p>Todos os direito reservados</p>
+    
+  </footer>
+
+
+</body>
+
+</html>

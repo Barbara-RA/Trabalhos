@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+header h1 {
+    color: black;
+    font-size: 30px;
+}
+header img{
+    width: 140px;
+    padding: 2px;
+
+}
+/* Estilos para o main */
+main {
+    background-color: wh;
+    color: #C21EF7;
+    padding: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+form label {
+    color: black;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder {
+    color: white;
+}
+
+form button {
+    background-color: #C21EF7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.08s ease-in-out;;
+}
+
+form button:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+    background-color: #570572;
+    
+}
+
+/* Estilos para a tabela */
+table {
+    background-color: #C21EF7;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+hr{
+    margin: 20px 5px;
+}
+
+th,td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer p {
+    color: white;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    color: #570572;
+}

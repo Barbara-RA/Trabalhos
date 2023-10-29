@@ -1,0 +1,877 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    text-align: center;
+    background-color: rgb(14, 13, 13);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+header ul, header li{
+    list-style: none;
+    
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    transition:  all 0.2s;
+    border-radius: 5px;
+    
+}
+
+
+nav a:hover{
+    background-color: rgb(34, 34, 34);
+    background:linear-gradient(90deg,  #df180a, #101111);
+    box-shadow: 0 5px 10px rgb(223, 97, 97);
+
+}
+
+
+
+header nav>ul>li{
+    display: inline-block
+
+}
+
+header ul{
+    padding: 10px 5px;
+    margin: 0px 4px;
+}
+
+header li{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 12px;
+}
+header img{
+    width: 30px;
+    margin-top: 5px;
+}
+
+header>ul{
+    position: fixed;
+    margin: 0px -580px ;
+}
+
+body{
+    background-color: black;
+}
+
+section{
+    text-align: center;
+}
+
+p{
+    font-size: 12px ;
+    text-align: justify;
+    padding: 10px 25px;
+    color: white;
+}
+
+
+h1{
+    font-size: 23px ;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
+}
+
+.apresentacaoJogo h1:hover, .temporada h1:hover, .classes h1:hover, .capaMapas h1:hover, .modos h1:hover{
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.616);
+}
+
+.banerInicial img{
+    width: 100%;
+}
+
+h2{
+    font-size: 18px ;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+}
+
+.apresentacaoJogo{
+    background-image: url(../Img/Fundo\ home\ .jpg);
+    background-size: 3000px;
+    background-repeat: no-repeat;
+}
+
+.apresentacaoJogo{
+    padding-bottom: 20px;
+}
+
+.apresentacaoJogo >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentacaoJogo > div >div{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.apresentacaoJogo h2{
+    color: rgb(139, 137, 137);
+    padding: 0px;
+    font-weight: 300;
+}
+
+#ps5{
+    width: 150px;
+}
+
+#console{
+    width: 300px;
+}
+
+.temporada, .personagem{
+    background-color: #394352;
+    color: white;
+    padding-bottom: 50px;
+}
+#divTituloTemporada{
+    background-image: url(../Img/Ballistic\ home.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 60px 0px;
+}
+
+.temporada h1{
+    font-size: 30px;
+}
+
+.temporada h2{
+    color: white;
+}
+
+.temporada iframe, .temporada img{
+    width: 100%;
+}
+
+.personagem img{
+    width: 60%;
+    height: 50%;
+}
+
+
+footer{
+    background-image: url(../Img/footer_fumaça\ branca.png);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+input{
+    width: 90%;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(5, 5, 5, 0.5);
+}
+
+input:hover{
+    scale: 1.1;
+}
+
+footer >div{
+    padding: 4px;    
+}
+
+footer >div >img{
+    width: 190px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.cadastro{
+    background-color: #69696995;
+    width: 350px;
+}
+
+
+#botaocadastro{
+    margin: 10px;
+    color: white;
+    background-color: #E30613;
+    font-weight: 500;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition:  0.2s;
+}
+
+#botaocadastro:hover{
+    transform: scale(0.7);
+    background-color: #7a030b;
+    background:linear-gradient(90deg,  #7a030b, #2b2a2a)
+}
+
+footer >div >div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+ 
+footer >div >div> img{
+    margin: 0 15px;
+    border-radius: 20%;
+    background-color: white;
+    padding: 5px;
+    transition:  0.4s;
+}
+
+footer >div >div> img:hover{
+    margin: 0 15px;
+    border-radius: 20%;
+    background-color: #0c0c0cb2;
+    padding: 5px;
+    transform: translate(-5px, -10px);
+    background:linear-gradient(90deg,  #f51707, #2b2a2a);
+    box-shadow: 0 10px 20px rgba(231, 80, 10, 0.5);
+}
+
+footer p{
+    background-color: #070707ee;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* ---------------------------------------------------------------------------Modos--------------------------------------------------------------------------- */
+.modos{
+    display: flex;
+    flex-direction: column;
+}
+
+.modos >div{
+    margin: 10px 0px;
+    border-radius: 15px;
+    
+}
+
+.modos >div>div{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-top:0px ;
+    padding: 15px 0px;
+}
+
+.modos >div >div >div{
+    width: 200px;
+}
+
+.modos h3{
+    font-weight: 400;
+    padding: 10px 20px 0px 20px;
+    font-size: 16px;  
+}
+
+.modos h2{
+    padding: 10px;
+    text-shadow:none;
+    font-size: 20PX;
+    font-weight: 600;
+
+}
+
+/* todas as divs pares de "Modos" */
+.modoMataMata > div, .modoCorridaArmas>div{
+    flex-direction: row-reverse;
+
+}
+
+/* BattleRoyale */
+.modoBattleRoyale {
+    background-color: #eb4c4c77;
+}
+
+.modoBattleRoyale h2, .modoBattleRoyale h3{
+    color: #f3d9d9;
+}
+.modoBattleRoyale img{
+    width: 70%;
+    margin-left: -100px;
+}
+
+/* Mata Mata */
+.modoMataMata {
+    background-color: #9de44b65;
+}
+
+.modoMataMata h2, .modoMataMata h3{
+    color: #9CE44B;
+}
+
+.modoMataMata img{
+    width:58%;
+    margin-right: -32px;
+}
+
+/* Controle */
+.modoControle {
+    background-color: #85c3c84b;
+}
+
+.modoControle h2, .modoControle h3{
+    color: #85C4C8;
+}
+
+.modoControle img{
+    width:53%;
+    margin-left: -30px;
+}
+
+/* Corrida das Armas */
+.modoCorridaArmas {
+    background-color: #ffbf004d;
+    text-align: center;
+}
+
+.modoCorridaArmas h2, .modoCorridaArmas h3{
+    color: #FFC000;
+}
+
+.modoCorridaArmas img{
+    width:50%;
+    margin-right: -25px;
+}
+
+.modoCorridaArmas > div >div >div>img{
+
+    width: 150px;
+    padding: 10px;
+}
+
+.combineHabilidades{
+    text-align: center;
+    margin: 20px 0px;
+}
+.combineHabilidades img, .suprimentos img{
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.suprimentos{
+    margin: 30px 0px 60px 0px;
+    
+}
+
+
+
+/* ---------------------------------------------------------------------------Lendas--------------------------------------------------------------------------- */
+.classes{
+    background-image: url(../Img/lendas_fumaça.jpg);
+    background-repeat: no-repeat;
+}
+
+.classes > img{
+    width: 100%; 
+
+}
+
+.lendas h2{
+    font-size: 12px;
+    color: white;
+}
+
+.lendas img, .popularidade img{
+    width: 100%;
+}
+
+
+.lendas> div >div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lendas> div >div>div{
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+.assalto b{
+    color: #D64537;
+}
+.assalto{
+    background-color: #d6443717;
+}
+
+.combate b{
+    color: #BFA937;
+}
+
+.combate{
+    background-color: #f5cd0718;
+}
+
+.batedor b{
+    color: #8E3AE2;
+}
+
+.batedor{
+    background-color: #8e3ae22f;
+}
+.controle b{
+    color: #70C84D;
+}
+.controle {
+    background-color: #4ae40d21;
+}
+
+.suporte b{
+    color: #3F75DC;
+}
+.suporte{
+    background-color: #3f76dc41;
+}
+
+.popularidade{
+    margin: 50px 0px;
+}
+
+/* ---------------------------------------------------------------------------Mapas--------------------------------------------------------------------------- */
+/* Estilo para o Formulário 1 com ID "formulario1" */
+#formulario1 {
+    background-color: #df180a; /* Vermelho (#df180a) */
+    border: 1px solid rgb(139, 137, 137); /* Cinza (#8b8989) */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 45px;
+}
+
+/* Estilo para os rótulos dentro do Formulário 1 */
+#formulario1 label {
+    color: white;
+}
+
+/* Estilo para os campos de entrada de texto e seleção dentro do Formulário 1 */
+#formulario1 input[type="text"],
+#formulario1 input[type="number"],
+#formulario1 select {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid #7a030b; /* Vinho (#7a030b) */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease; /* Efeito de transição na cor da borda */
+    
+}
+
+/* Efeito de borda ao clicar nos campos de entrada */
+#formulario1 input[type="text"]:focus,
+#formulario1 input[type="number"]:focus,
+#formulario1 select:focus {
+    border-color: #df180a; /* Vermelho (#df180a) */
+}
+
+/* Estilo para o botão de envio dentro do Formulário 1 */
+#formulario1 input[type="submit"] {
+    background-color: #7a030b; /* Vinho (#7a030b) */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
+}
+
+#formulario1 input[type="text"]:hover,
+#formulario1 input[type="number"]:hover{
+    transform: scale(0.9);
+    transition: scale(0.9);
+}
+
+
+/* Efeito de fundo ao passar o mouse sobre o botão de envio */
+#formulario1 input[type="submit"]:hover {
+    background-color: #a15151; /* Vermelho (#df180a) */
+    transform: scale(0.8);
+}
+
+/* Estilo para a tabela */
+#tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/* Estilo para as células de cabeçalho */
+#tabela th {
+    background-color: #7a030b; /* Vinho (#7a030b) */
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilo para as células de dados */
+#tabela td {
+    border: 1px solid #df180a; /* Vermelho (#df180a) */
+    padding: 8px;
+}
+
+#listaFormulario{
+    margin-bottom: 200px;
+}
+/* Estilo para linhas alternadas com fundo cinza claro (#f2f2f2) */
+#tabela tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para destacar a primeira linha com fundo cinza mais escuro (#dcdcdc) */
+#tabela tr:nth-child(odd) {
+    background-color: #918f8f;
+    
+}
+
+
+
+/* ------------- botões ------------------- */
+td>a {
+    color: rgb(240, 13, 13);
+    background-color: white;
+    border: 1px solid rgb(1, 1, 1);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+td>a:visited{
+    color: rgb(240, 13, 13);
+}
+
+@media screen and (min-width: 1000px){
+       
+  
+    header li{
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section{
+        width: 1500px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .apresentacaoJogo h1:hover, .temporada h1:hover, .classes h1:hover, .capaMapas h1:hover{
+        letter-spacing: 15px;
+    }
+
+    p{
+        font-size: 16px;
+        padding: 10px 80px;
+        line-height: 30px;  
+    }
+
+    .apresentacaoJogo{
+        background-size: 2000px;
+        background-repeat: no-repeat;
+    
+    }
+
+    /* ajustes para Ancora */
+    .apresentacaoJogo h1, .modos h1, .combineHabilidades h1, .suprimentos h1, .classes h1, .lendas h1, .popularidade h1, .mapasBattleRoyale h1, .mapaOutrosModos h1{
+        padding-top: 90px;
+    }
+
+    .apresentacaoJogo >div >div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+   
+    }
+
+     
+    .apresentacaoJogo >div >div>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    
+    }
+    
+    #ps5{
+        width: 65%;
+    }
+
+    .temporada h1{
+        padding: 200px 0px ;
+        font-size: 90px;
+    }
+
+    .temporada >div{
+        display: flex;
+        flex: row;
+        justify-content: center;
+    }
+
+    .temporada >div>div{
+        width: 33%;
+    }
+
+    .temporada img, .temporada iframe{
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+
+    .temporada img{
+        height: 100%;
+    }
+
+    .personagem >div{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .personagem img{
+        width: 40%;
+        height: 50%;
+    }
+    .personagem img:active{
+        transform: scale(0.99);
+  
+    }
+    .personagem h2{
+        font-size: 40px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    /* menu lateral */
+    header>ul{
+        top: 100px;
+        margin: 0px -180px ;
+        list-style: none;
+        padding-left: 0px;
+        text-align: right;
+    }
+
+    header>ul>li{
+        width: 200px;
+        padding: 20px 20px 10px 0px;
+        transition: all 0.5s;
+        border-radius: 10px;
+        margin: 10px;
+        border-right: 10px solid rgb(230, 11, 4);
+        
+    }
+    header>ul>li:hover,header>ul>li>a:hover{
+        transform: translateX(50px);
+        width: 280px;
+        color: rgb(226, 15, 15);
+        border-bottom: none;
+        background-color: rgb(34, 34, 34);
+    }
+
+    header>ul>li>a{
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    .subMenu{
+        background-color: rgb(34, 34, 34);
+    }
+    /* *** */
+
+    footer{
+        background-size: 100%;
+    }
+    
+    footer >div >img{
+        width: 400px;
+    }
+    
+    .modos >div>p{
+        text-align: center;
+    }
+   
+
+    .modos >div >div >div{
+        width: 110%;
+    }
+    
+    .modos h2{
+        font-weight: 600;
+        font-size: 35PX;
+    }
+    .modos h3{
+        font-weight: 400;
+        padding: 10px 20px 0px 20px;  
+        font-size: 23px; 
+    }
+
+    
+
+    .modos img{
+        width: 20%;
+    }
+
+    .modoCorridaArmas > div >div >div>img{
+        width: 40%;
+        border-radius: 11%;
+    }
+    
+    .combineHabilidades{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .combineHabilidades img, .suprimentos img{
+        width: 40%;
+
+    }
+
+    .classes{
+        background-size: 100%;
+    }
+    
+    .classes > img{
+        width: 60%; 
+    
+    }
+
+    .classes div{
+        padding-top: 50px;    
+    }
+
+    .lendas h2{
+        font-size: 20px;
+    }
+
+    .lendas p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .lendas img{
+        width: 90%;
+    }
+
+    .popularidade >div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+    }
+
+    .popularidade img{
+        width: 50%;
+    }
+
+    .popularidade p{
+        line-height: 40px;
+    }
+    .lendas> div >div>div{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+
+    .lendas img:hover{
+        transition: all 0.2s;
+    }
+
+    .lendas img:hover{
+        transform: scale(1.2);
+    }
+
+    .capaMapas{
+ 
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    .capaMapas h1{
+        padding-bottom: 700px;
+        padding-top: 50px;
+    }
+
+    .mapasBattleRoyale>div:nth-child(odd){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     }
+
+    .mapasBattleRoyale>div:nth-child(even){
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center; 
+        
+    }
+
+    .mapasBattleRoyale img{
+        width: 50%;
+        height: 400%;
+        border-radius: 5%;
+    }
+
+    .mapasBattleRoyale h2{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .mapaOutrosModos p{
+        text-align: center;
+    }
+
+    .mapaOutrosModos h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    /* ------------- botões ------------------- */
+    #delete,#edit {
+    color: rgb(240, 13, 13);
+    background-color: white;
+    border: 1px solid rgb(1, 1, 1);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+}
